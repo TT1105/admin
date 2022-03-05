@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>:: HexaBit :: Inbox Compose</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!-- VENDOR CSS -->
+<link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../assets/vendor/summernote/dist/summernote.css"/>
+
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/inbox.css">
+<link rel="stylesheet" href="assets/css/color_skins.css">
+</head>
+<body class="theme-orange">
+
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+      <div class="m-t-30"><img src="../assets/images/icon-light.svg" width="48" height="48" alt="HexaBit"></div>
+      <p>Please wait...</p>
+    </div>
+  </div>
+  <!-- Overlay For Sidebars -->
+  <div class="overlay"></div>
+
+    <div id="left-sidebar" class="sidebar">
+      <div class="navbar-brand">
+        <a href="index.html"><img src="../assets/images/icon-dark.svg" alt="HexaBit Logo"
+            class="img-fluid logo"><span>千图网数据后台</span></a>
+        <button type="button" class="btn-toggle-offcanvas btn btn-sm btn-default float-right"><i
+            class="lnr lnr-menu fa fa-chevron-circle-left"></i></button>
+      </div>
+      <div class="sidebar-scroll">
+        <div class="user-account">
+          <div class="user_div">
+            <img src="../assets/images/user.png" class="user-photo" alt="User Profile Picture">
+          </div>
+          <div class="dropdown">
+            <span>欢迎,</span>
+            <a href="javascript:void(0);" class="dropdown-toggle user-name"
+              data-toggle="dropdown"><strong>超级管理员</strong></a>
+            <ul class="dropdown-menu dropdown-menu-right account">
+              <li><a href="page-profile.html"><i class="icon-user"></i>我的简介</a></li>
+              <li><a href="app-inbox.html"><i class="icon-envelope-open"></i>留言</a></li>
+              <li><a href="javascript:void(0);"><i class="icon-settings"></i>设置</a></li>
+              <li class="divider"></li>
+              <li><a href="page-login.html"><i class="icon-power"></i>退出</a></li>
+            </ul>
+          </div>
+        </div>
+        <nav id="left-sidebar-nav" class="sidebar-nav">
+          <ul id="main-menu" class="metismenu">
+            <li><a href="index.html"><i class="icon-home"></i><span>系统主页</span></a></li>
+            <li class="active"><a href="app-inbox.html"><i class="icon-envelope"></i><span>留言管理</span></a></li>
+            <li><a href="app-chat.html"><i class="icon-bubbles"></i><span>采购管理</span></a></li>
+            <li><a href="app-inbox.html"><i class="icon-envelope"></i><span>系统设置</span></a></li>
+            <li><a href="app-chat.html"><i class="icon-bubbles"></i><span>系统设置</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div id="main-content">
+        <div class="mail-inbox">
+            <div class="mobile-left">
+                <a href="javascript:void(0);" class="btn btn-primary toggle-email-nav"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="mail-left">
+                <div class="mail-compose m-b-20">
+                    <a href="app-compose.html" class="btn btn-danger btn-block">编辑</a>
+                </div>
+                <div class="mail-side">
+                    <ul class="nav">
+                        <li class="active"><a href="javascript:void(0);"><i class="icon-envelope"></i>收件箱<span class="badge badge-primary float-right">6</span></a></li>
+                        <li><a href="javascript:void(0);"><i class="icon-cursor"></i>发送</a></li>
+                        <li><a href="javascript:void(0);"><i class="icon-envelope-open"></i>草稿<span class="badge badge-info float-right">3</span></a></li>
+                        <li><a href="javascript:void(0);"><i class="icon-action-redo"></i>发件箱</a></li>
+                        <li><a href="javascript:void(0);"><i class="icon-star"></i>星标<span class="badge badge-warning float-right">6</span></a></li>
+                        <li><a href="javascript:void(0);"><i class="icon-trash"></i>垃圾箱<span class="badge badge-danger float-right">9</span></a></li>
+                    </ul>
+                    <h3 class="label">Labels <a href="javascript:void(0);" class="float-right m-r-10" title="Add New Labels"><i class="icon-plus"></i></a></h3>
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="javascript:void(0);"><i class="fa fa-circle text-danger"></i>网页设计<span class="badge badge-primary float-right">5</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><i class="fa fa-circle text-info"></i>充电</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><i class="fa fa-circle text-dark"></i>支付</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><i class="fa fa-circle text-primary"></i>家庭</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mail-right check-all-parent">                
+                <div class="mail-compose">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="收件人">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="主题">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="标题">
+                        </div>
+                    </form>
+                    <hr>
+                    <div class="summernote">
+                        你好
+                        <br/>
+                        <p>这是一封邮件 <code>oninit</code>, <code>onfocus</code>, <code>onpaste</code> and many more.</p>
+                        <p>Please try <b>paste some texts</b> here</p>
+                    </div>
+                    <div class="m-t-30">
+                        <button type="button" class="btn btn-success">发送</button>
+                        <button type="button" class="btn btn-secondary">草稿</button>
+                        <a href="app-inbox.html" class="btn btn-outline-secondary">关闭</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Javascript -->
+<script src="assets/bundles/libscripts.bundle.js"></script>    
+<script src="assets/bundles/vendorscripts.bundle.js"></script>
+
+<script src="assets/bundles/mainscripts.bundle.js"></script>
+<script src="../assets/vendor/summernote/dist/summernote.js"></script>
+
+<script>
+    $('.toggle-email-nav').on('click', function() {
+		$('.mail-left').toggleClass('open');
+	});
+</script>
+</body>
+</html>

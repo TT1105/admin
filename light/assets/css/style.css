@@ -1,0 +1,44 @@
+ul.pieline{
+    width: 60%;
+    padding: 0;
+    margin: 1.5rem 0 0 0.9rem;
+    float: left;
+    list-style: none;
+}
+.pieline li{
+    padding: 0.5rem 0;
+    font-weight: 600;
+}
+.pieline li span{
+    color: #2347D6;
+    padding: 0 0.rem;
+}
+#main{
+    width: 100%;height: 500px;
+}
+#Histogram{
+    width: 48%;height: 300px;float:left;background-color: #fff;margin-right: 2%;
+}
+#Histogram2{
+  width: 48%;height: 300px;float:left;background-color: #fff;
+}
+#line{
+    width: 100%;height: 300px;
+}
+.product{
+    width: 90%;
+    margin: 0 auto;
+}
+.productH{
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #F4F7FD;
+    width: 100%;
+}
+.product tr td{
+    padding: 0.4rem 0;
+    margin: 0.1rem;
+    text-align: center;
+    border: 1px #d8d8d8 solid;
+    border-radius: 10px !important;
+}
